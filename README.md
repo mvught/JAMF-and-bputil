@@ -40,9 +40,11 @@
 - [Note and disclaimer](#note-and-disclaimer)
 
 ## Introduction
-This utility is not meant for normal users or even sysadmins. It provides unabstracted access to capabilities which are normally handled for the user automatically when changing the security policy through GUIs such as the Startup Security Utility in macOS Recovery (“recoveryOS”). It is possible to make your system security much weaker and therefore easier to compromise using this tool. This tool is not to be used in production environments. It is possible to render your system unbootable with this tool. It should only be used to understand how the security of Apple Silicon Macs works. Use at your own risk!
+I created this script to make the level of me and my users easier.
+Previously, we had to call the users to go through the steps together with the user.
+This all went through the terminal but took a lot of time so when Swift came along I dived into it and came up with the following:
 
-I have made this script to put it in JAMF and make your life easy.
+This utility is not meant for normal users or even sysadmins. It provides unabstracted access to capabilities which are normally handled for the user automatically when changing the security policy through GUIs such as the Startup Security Utility in macOS Recovery (“recoveryOS”). It is possible to make your system security much weaker and therefore easier to compromise using this tool. This tool is not to be used in production environments. It is possible to render your system unbootable with this tool. It should only be used to understand how the security of Apple Silicon Macs works. Use at your own risk!
 
 ## Requirements
 * macOS 11.0.1 or higher
@@ -50,34 +52,32 @@ I have made this script to put it in JAMF and make your life easy.
 
 ## Download
 
-### Support App
-Package Installer (includes LaunchAgent): [**Download**](https://github.com/root3nl/SupportApp/releases/latest)
+### Secure Boot Level.sh
+Script: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Secure%20Boot%20Level.sh)
 
-Application (zipped): [**Download**](https://github.com/root3nl/SupportApp/releases/latest)
-
-See the MDM deployment section below for more info.
-
-### SupportHelper
-Package Installer (includes LaunchDaemon): [**Download**](https://github.com/root3nl/SupportApp/releases/latest)
+### General Commands Manual BPUTIL.man
+Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/General%20Commands%20Manual%09BPUTIL.man)
 
 ## Technologies
 * Written in Swift using SwiftUI
-* All icons are SF Symbols
 * Built for and compatible with macOS 11.0 and higher
 * Native support for Apple Silicon
 * Dark Mode support
-* Colors are matched with your macOS accent color (blue by default)
-* MDM support to configure your own branding such as a custom title, logo, SF Symbols and contact methods
-* Notarized
-* Sandboxed
-* Localized in English, Dutch, French and German
 
-## Features
+## JAMF
 
-### Menu Bar Icon
-The Menu Bar Icon can be customized to your own PNG with Alpha Channel or using an SF Symbol. Any image will be shown as template to match the rest of the Menu Bar Extras. Icons larger than 22 points will automatically be resized to the recommended 16 points. Optionally a notification badge can overlay the icon to attract the user's attention when an Apple Software Update is available or any other warning was triggered. Please check the preference key "StatusBarIconNotifierEnabled".
+### Smart Groups
+We have to make 3 smart groups because we have 3 levels:
+- Full
+<img src="/Screenshots/Secure Boot Level Full.png" width="450">
+- Medium
+<img src="/Screenshots/Secure Boot Level Medium.png" width="450">
+- No Security (Off)
+<img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
-### Title and logo
+
+
+### Script
 The row above the buttons allow a custom title and company logo. The title supports both text and Emoji. On macOS Monterey and higher, it supports Markdown as well. The logo supports several images types like PNG, JPEG and ICNS and will be resized to a maximum height of 48 points. The original aspect ratio will be retained. A PNG with alpha channel is advised to get variable transparency around your logo.
 
 ### Color
