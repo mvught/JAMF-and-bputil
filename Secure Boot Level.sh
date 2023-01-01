@@ -27,12 +27,12 @@ scriptVersion="1.0"
 
 # The body of the message that will be displayed before prompting the user for
 # their password. All message strings below can be multiple lines.
-message="## Secure Boot Level\n\nYour laptop Secure Boot Level is Medium and we want it at High .\n\n Please provide your password to set Secure Boot Level Full."
-forgotMessage="## Secure Boot Level\n\nYour laptop Secure Boot Level is Medium and we want it at High .\n\n Please provide your password to set Secure Boot Level Full. \n\n ### Password Incorrect please try again:"
+message="## Secure Boot Level\n\nYour mac Security is Medium or Off and we want it at High.\n\n Please provide your password to set Secure Boot Level Full."
+forgotMessage="## Secure Boot Level\n\nYour mac Security is Medium or Off and we want it at High.\n\n Please provide your password to set Secure Boot Level Full. \n\n ### Password Incorrect please try again:"
 banner="https://www.agconnect.nl/sites/ag/files/2020-12/hack_shutterstock_1218735091.png?raw=true"
 
 # The body of the message that will be displayed if a failure occurs.
-FAIL_MESSAGE="## Check password or be sure you are an Admin and try again.\n\nPlease contact support: applesupport@umcutrecht.nl."
+FAIL_MESSAGE="## Check password or be sure you are an Admin and try again.\n\nPlease contact support: mailadres@mail.nl."
 
 ## SwiftDialog
 dialogApp="/usr/local/bin/dialog"
