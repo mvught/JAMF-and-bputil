@@ -54,9 +54,9 @@ We have to make 3 smart groups because we have 3 levels:
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
 ### SelfService Item
-Make a name: "Secure Boot Level"
-<img src="/Screenshots/Swift SelfService SBL 1.png" width="450">
-<img src="/Screenshots/Swift SelfService SBL 2.png" width="450">
+Make a name: "Secure Boot Level" and scope it to you target "smart-group"
+
+<img src="/Screenshots/SelfService SBL Item.png" width="450">
 
 <img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="50">
 
