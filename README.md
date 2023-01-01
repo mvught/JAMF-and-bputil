@@ -4,7 +4,7 @@
 ![Github](https://img.shields.io/badge/macOS-11%2B-green)
 [![Github](https://img.shields.io/badge/Join-TestFlight-blue)](https://testflight.apple.com/join/asmgJsAM)
 
-<img src="/Screenshots/Secure Boot Level No Security" width="800">
+<img src="/Screenshots/Secure Boot Level No Security.png" width="800">
 
 <img src="/Screenshots/generic_version_2.1_small.png" width="450"> <img src="/Screenshots/generic_light_mode_cropped.png" width="450"> <img src="/Screenshots/generic_version_2.3_small_dark.png" width="450">
 
