@@ -10,7 +10,6 @@
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Download](#download)
-  * [TestFlight](#testflight)
 - [Technologies](#technologies)
 - [Features](#features)
   * [Menu Bar Icon](#menu-bar-icon)
@@ -60,13 +59,6 @@ See the MDM deployment section below for more info.
 
 ### SupportHelper
 Package Installer (includes LaunchDaemon): [**Download**](https://github.com/root3nl/SupportApp/releases/latest)
-
-### TestFlight
-You can participate in beta versions of Support App using TestFlight. This requires macOS 12 or higher.
-
-[**Join TestFlight**](https://testflight.apple.com/join/asmgJsAM)
-
-Note: There may not always be a TestFlight version available.
 
 ## Technologies
 * Written in Swift using SwiftUI
