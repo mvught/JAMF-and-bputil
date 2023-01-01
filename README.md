@@ -31,7 +31,7 @@ This utility is not meant for normal users or even sysadmins. It provides unabst
 Script: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Secure%20Boot%20Level.sh)
 
 ### General Commands Manual BPUTIL.man
-Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/General%20Commands%20Manual%09BPUTIL.man)
+Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Manual%20BPUTIL.man)
 
 ## Technologies
 * Written in Swift using SwiftUI
