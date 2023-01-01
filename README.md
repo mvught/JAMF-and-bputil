@@ -54,8 +54,8 @@ We have to make 3 smart groups because we have 3 levels:
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
 ### SelfService Item
-<img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="50">
-Icon: [**Download**](/Screenshots/FirmwarePasswordUtilityIconX.png)
+Icon: <img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="50">
+[**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
 
 ### Script
 Remember well that the user must be an admin to set security to Full. Otherwise, it won't work and the policy fails.
