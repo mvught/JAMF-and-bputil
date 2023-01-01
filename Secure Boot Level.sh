@@ -13,44 +13,10 @@
 #     possible to render your system unbootable with this tool. It should only
 #     be used to understand how the security of Apple Silicon Macs works. Use
 #     at your own risk!
-#
-#     bputil performs actions by calling the BootPolicy library. This modifies
-#     the security configuration of the system, which is stored in a file
-#     called the LocalPolicy. This file is digitally signed by the Secure
-#     Enclave Processor (SEP). The private key which is used to sign the
-#     LocalPolicy is protected by a separate key which is only accessible when
-#     a user has put in their password as part of a successful authentication.
-#     This is why this tool must either have a username and password specified
-#     on the command line, or via the interactive prompt.
-#
-#     By design, the SEP application which is responsible for making changes to
-#     the LocalPolicy will inspect the boot state of the main Application Pro-
-#     cessor (AP). It will only allow the below security-downgrading operations
-#     if it detects that the AP is in the intended boot state. When System
-#     Integrity Protection (SIP) was first introduced to Macs, it was decided
-#     that requiring a reboot to macOS Recovery would provide intentional fric-
-#     tion which would make it harder for malicious software to downgrade the
-#     system. That precedent is extended here to detect the special boot to
-#     macOS Recovery via holding the power key at boot time. We refer to this
-#     as One True Recovery (1TR), and most of the below downgrade options will
-#     only work when booted into 1TR, not when called from normal macOS. This
-#     helps ensure that only a physically-present user, not malicious software
-#     running in macOS, can permanently downgrade the security settings. The
-#     below CLI options specify what boot environments a downgrade can be per-
-#     formed from.
-#
-#     The SEP-signed LocalPolicy is evaluated at boot time by iBoot. Configura-
-#     tions within the LocalPolicy change iBoot's behavior, such as whether it
-#     will require that all boot objects must be signed with metadata specific
-#     to the particular machine (a "personalized" signature, which is the
-#     default, and the always-required policy on iOS), or whether it will
-#     accept "global" signatures which are valid for all units of a specific
-#     hardware model. The LocalPolicy can also influence other boot or OS secu-
-#     rity behavior as described in the below options.
 #     Author:  Thijs v Vught
-#   Created:  2022-12-30
+#     Created:  2022-12-30
 #     Last Modified:  2022-12-30
-#   Version:  1.0
+#     Version:  1.0
 #   
 #
 ###
