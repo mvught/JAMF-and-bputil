@@ -75,8 +75,6 @@ We have to make 3 smart groups because we have 3 levels:
 * No Security (Off)
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
-
-
 ### Script
 The row above the buttons allow a custom title and company logo. The title supports both text and Emoji. On macOS Monterey and higher, it supports Markdown as well. The logo supports several images types like PNG, JPEG and ICNS and will be resized to a maximum height of 48 points. The original aspect ratio will be retained. A PNG with alpha channel is advised to get variable transparency around your logo.
 
