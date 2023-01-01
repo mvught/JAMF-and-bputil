@@ -70,9 +70,9 @@ Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Gener
 We have to make 3 smart groups because we have 3 levels:
 * Full
 <img src="/Screenshots/Secure Boot Level Full.png" width="450">
-* Medium
+* Full
 <img src="/Screenshots/Secure Boot Level Medium.png" width="450">
-* No Security (Off)
+* Full
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
 ### Script
