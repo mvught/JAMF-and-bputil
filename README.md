@@ -45,14 +45,9 @@ This utility is not meant for normal users or even sysadmins. It provides unabst
 
 I have made this script to put it in JAMF and make your life easy.
 
-Root3 already had a basic in-house support app written in Objective-C and decided to completely rewrite it in Swift using SwiftUI with an all-new design that looks great on macOS Big Sur. We’ve learned that SwiftUI is the perfect way of creating great looking apps for all Apple platforms with minimal effort. In the development process we decided to make it generic so other organizations can take advantage of it and contribute to the Mac admins community.
-
-
-The easiest and recommended way to configure the app is using a Configuration Profile and your MDM solution.
-
 ## Requirements
 * macOS 11.0.1 or higher
-* Any MDM solution supporting custom Configuration Profiles
+* Apple Silicon Mac
 
 ## Download
 
