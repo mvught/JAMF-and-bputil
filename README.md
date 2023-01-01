@@ -54,8 +54,12 @@ We have to make 3 smart groups because we have 3 levels:
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
 ### SelfService Item
-Icon: 
+Make a name: "Secure Boot Level"
+<img src="/Screenshots/Swift SelfService SBL 1.png" width="450">
+<img src="/Screenshots/Swift SelfService SBL 2.png" width="450">
+
 <img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="50">
+
 [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
 
 ### Script
