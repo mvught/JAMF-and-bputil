@@ -2,9 +2,8 @@
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/root3nl/SupportApp?color=success)
 ![Github](https://img.shields.io/badge/macOS-11%2B-green)
-[![Github](https://img.shields.io/badge/Join-TestFlight-blue)](https://testflight.apple.com/join/asmgJsAM)
 
-<img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="800">
+<img src="/Screenshots/Swift SelfService SBL.png" width="800">
 
 <img src="/Screenshots/generic_version_2.1_small.png" width="450"> <img src="/Screenshots/generic_light_mode_cropped.png" width="450"> <img src="/Screenshots/generic_version_2.3_small_dark.png" width="450">
 
@@ -42,12 +41,9 @@
 - [Note and disclaimer](#note-and-disclaimer)
 
 ## Introduction
-The Support app is a macOS menu bar app built for organizations to:
-* Help users and helpdesks to see basic diagnostic information at a glance and proactively notify them to easily fix small issues.
-* Offer shortcuts to easily access support channels or other company resources such as a website or a file server
-* Give users a modern and native macOS app with your corporate identity
+This utility is not meant for normal users or even sysadmins. It provides unabstracted access to capabilities which are normally handled for the user automatically when changing the security policy through GUIs such as the Startup Security Utility in macOS Recovery (“recoveryOS”). It is possible to make your system security much weaker and therefore easier to compromise using this tool. This tool is not to be used in production environments. It is possible to render your system unbootable with this tool. It should only be used to understand how the security of Apple Silicon Macs works. Use at your own risk!
 
-The app is developed by Root3, specialized in managing Apple devices. Root3 offers consultancy and support for organizations to get the most out of their Apple devices and is based in The Netherlands (Halfweg).
+I have made this script to put it in JAMF and make your life easy.
 
 Root3 already had a basic in-house support app written in Objective-C and decided to completely rewrite it in Swift using SwiftUI with an all-new design that looks great on macOS Big Sur. We’ve learned that SwiftUI is the perfect way of creating great looking apps for all Apple platforms with minimal effort. In the development process we decided to make it generic so other organizations can take advantage of it and contribute to the Mac admins community.
 
