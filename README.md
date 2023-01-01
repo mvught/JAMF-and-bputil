@@ -54,7 +54,8 @@ We have to make 3 smart groups because we have 3 levels:
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
 ### SelfService Item
-Icon: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
+Icon: [**Download**]
+(https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
 <img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="100">
 
 ### Script
