@@ -11,6 +11,7 @@
 - [Technologies](#technologies)
 - [JAMF](#JAMF)
   * [Smart Groups](#Smart-Groups)
+  * [SelfService Item](#SelfService-Item)
   * [Script](#Script)
 - [Note and disclaimer](#note-and-disclaimer)
 
@@ -51,6 +52,10 @@ We have to make 3 smart groups because we have 3 levels:
 <img src="/Screenshots/Secure Boot Level Medium.png" width="450">
 
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
+
+### SelfService Item
+Icon: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
+<img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="150">
 
 ### Script
 Remember well that the user must be an admin to set security to Full. Otherwise, it won't work and the policy fails.
