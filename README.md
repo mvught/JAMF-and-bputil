@@ -12,7 +12,7 @@
 - [Download](#download)
 - [Technologies](#technologies)
 - [JAMF](#JAMF)
-  * [Smart Groups](#Smart Groups)
+  * [Smart Groups](#Smart-Groups)
   * [Script](#Script)
 - [Note and disclaimer](#note-and-disclaimer)
 
