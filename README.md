@@ -54,7 +54,7 @@ To work properly with bputil, we need 3 smart groups. Here is an example:
 <img src="/Screenshots/Secure Boot Level No Security.png" width="450">
 
 ### SelfService Item
-Make a name: "Secure Boot Level" and scope it to you target "smart-group"
+Make a name: "Secure Boot Level" and scope it to your target "smart-group"
 
 <img src="/Screenshots/SelfService SBL Item.png" width="450">
 
