@@ -24,7 +24,7 @@
 scriptVersion="1.0"
 infotext="More Information"
 infolink="https://support.apple.com/en-gb/HT208198"
-ithelplink="https://umcutrecht.topdesk.net"
+ithelplink="https://helpdesk.topdesk.net"
 button2text="Contact the Helpdesk"
 
 ################################## VARIABLES ##################################
