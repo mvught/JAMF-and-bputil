@@ -1,6 +1,6 @@
 # JAMF-and-bputil
 
-![GitHub release (latest by date)](https://img.shields.io/badge/release-v1.0-green)
+![GitHub release (latest by date)](https://img.shields.io/badge/release-v1.0-blue)
 ![Github](https://img.shields.io/badge/macOS-11%2B-green)
 
 <img src="/Screenshots/Swift SelfService SBL.png" width="800">
