@@ -66,7 +66,7 @@ Make a name: "Secure Boot Level" and scope it to your target "smart-group"
 
 ### Script
 Remember well that the user must be an "admin" and "volumeowner" to set security to Full. Otherwise, it won't work and the policy fails.
-We use SAP Privileges to evaluate the admin rights.
+We use SAP Privileges to activate permissions in this script.
 
 
 ## Note and disclaimer
