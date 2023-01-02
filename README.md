@@ -18,7 +18,7 @@ This tool provides a nice user interface to set the Security back to High. It us
 - [Note and disclaimer](#note-and-disclaimer)
 
 ## Introduction
-I created this script to make my life easy. Because it can only be set by bputil or DFU mode and restore the device. Would be nice Apple can build it in "Erase All Content and Settings" 
+I created this script to make my life easy. Because it can only be set by bputil or DFU mode and restore the device. Would be nice Apple can build it in "Erase All Content and Settings".
 Previously, we had to call the users to go through the steps together with the user.
 This all went through the terminal but took a lot of time so when Swift came along I dived into it and came up with the following:
 
