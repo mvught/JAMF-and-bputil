@@ -16,7 +16,7 @@
 - [Note and disclaimer](#note-and-disclaimer)
 
 ## Introduction
-I created this script to make the level of me and my users easier.
+I created this script to make my life easy.
 Previously, we had to call the users to go through the steps together with the user.
 This all went through the terminal but took a lot of time so when Swift came along I dived into it and came up with the following:
 
@@ -24,7 +24,7 @@ This utility is not meant for normal users or even sysadmins. It provides unabst
 
 ## Requirements
 * macOS 11.0.1 or higher
-* Apple Silicon Mac
+* Apple Silicon Mac and T2
 * SAP Privileges (Make sure you are an Admin)
 
 ## Download
@@ -64,7 +64,7 @@ Make a name: "Secure Boot Level" and scope it to your target "smart-group"
 [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
 
 ### Script
-Remember well that the user must be an admin to set security to Full. Otherwise, it won't work and the policy fails.
+Remember well that the user must be an "admin" and "volumeowner" to set security to Full. Otherwise, it won't work and the policy fails.
 
 
 ## Note and disclaimer
