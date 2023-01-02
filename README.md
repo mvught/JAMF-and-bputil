@@ -18,10 +18,11 @@ This tool provides a nice user interface to set the Security back to High. It us
 - [Note and disclaimer](#note-and-disclaimer)
 
 ## Introduction
-I created this script to make my life easy.
+I created this script to make my life easy. Because it can only be set by bputil or DFU mode and restore the device. Would be nice Apple can build it in "Erase All Content and Settings" 
 Previously, we had to call the users to go through the steps together with the user.
 This all went through the terminal but took a lot of time so when Swift came along I dived into it and came up with the following:
 
+## BPUTIL
 This utility is not meant for normal users or even sysadmins. It provides unabstracted access to capabilities which are normally handled for the user automatically when changing the security policy through GUIs such as the Startup Security Utility in macOS Recovery (“recoveryOS”). It is possible to make your system security much weaker and therefore easier to compromise using this tool. This tool is not to be used in production environments. It is possible to render your system unbootable with this tool. It should only be used to understand how the security of Apple Silicon Macs works. Use at your own risk!
 
 ## Requirements
