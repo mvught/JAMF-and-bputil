@@ -43,7 +43,7 @@ Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Manua
 ## JAMF
 
 ### Smart Groups
-We have to make 3 smart groups because we have 3 levels:
+To work properly with bputil, we need 3 smart groups. Here is an example:
 * Full
 * Medium
 * No Security (Off)
