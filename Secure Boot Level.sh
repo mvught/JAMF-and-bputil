@@ -94,6 +94,8 @@ dialogSuccess="$dialogApp \
 # Get the logged in user's name
 CURRENT_USER=$(/bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/&&!/loginwindow/{print $3}')
 
+# Make sure we have root privileges (for bputil).
+sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
 
 # Exits if root is the currently logged-in user, or no logged-in user is detected.
 function check_logged_in_user {
@@ -122,8 +124,10 @@ done
 echo "Successfully prompted for Mac password."
 
 sudo bputil -f -u $CURRENT_USER -p $USER_PASS
-
     echo "Displaying \"success\" message..."
     eval "$dialogSuccess"
+
+# SAP Privileges CLI
+sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove
 
 exit 0
