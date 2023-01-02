@@ -23,10 +23,10 @@ This all went through the terminal but took a lot of time so when Swift came alo
 This utility is not meant for normal users or even sysadmins. It provides unabstracted access to capabilities which are normally handled for the user automatically when changing the security policy through GUIs such as the Startup Security Utility in macOS Recovery (“recoveryOS”). It is possible to make your system security much weaker and therefore easier to compromise using this tool. This tool is not to be used in production environments. It is possible to render your system unbootable with this tool. It should only be used to understand how the security of Apple Silicon Macs works. Use at your own risk!
 
 ## Requirements
-* macOS 11.0.1 or higher
-* Apple Silicon Mac, T2
+* macOS 11 or higher
+* Mac with Apple T2 and M1 Security Chip
 * SAP Privileges
-* The Volumeowner should be a Admin user
+* Volume Owner and Secure Token user
 
 ## Download
 
