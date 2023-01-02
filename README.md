@@ -68,6 +68,6 @@ Remember well that the user must be an admin to set security to Full. Otherwise,
 
 
 ## Note and disclaimer
-* UMC developed this script as a side project to add additional value you
+* UMC-Utrecht developed this script as a side project to add additional value you
 * The script can be used free of charge and is provided ‘as is’, without any warranty
 * Comments and feature request are appreciated. Please file an issue on Github
