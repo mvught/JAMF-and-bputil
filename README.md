@@ -24,7 +24,7 @@ This utility is not meant for normal users or even sysadmins. It provides unabst
 
 ## Requirements
 * macOS 11 or higher
-* Mac with Apple T2 and M1 Security Chip
+* Mac with Apple T2 or M1 Security Chip
 * SAP Privileges
 * Volume Owner and Secure Token user
 
