@@ -48,6 +48,9 @@ Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Manua
 
 ### Smart Groups
 To work properly with bputil, we need 3 smart groups. Here is an example:
+
+<img src="/Screenshots/Smart Computer Groups.png" width="450">
+
 * Full
 * Medium
 * No Security (Off)
