@@ -25,7 +25,8 @@ This utility is not meant for normal users or even sysadmins. It provides unabst
 ## Requirements
 * macOS 11.0.1 or higher
 * Apple Silicon Mac, T2
-* SAP Privileges (Make sure you are an Admin)
+* SAP Privileges
+* The Volumeowner should be a Admin user
 
 ## Download
 
