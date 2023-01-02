@@ -29,10 +29,10 @@ This utility is not meant for normal users or even sysadmins. It provides unabst
 
 ## Download
 
-### Secure Boot Level.sh
+### Secure Boot Level
 Script: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Secure%20Boot%20Level.sh)
 
-### Manual BPUTIL.man
+### Manual BPUTIL
 Manual: [**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Manual%20BPUTIL.sh)
 
 ## Technologies
