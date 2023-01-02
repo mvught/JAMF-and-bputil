@@ -106,6 +106,7 @@ dialogSuccess="$dialogApp \
 # Get the logged in user's name
 CURRENT_USER=$(/bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/&&!/loginwindow/{print $3}')
 
+# SAP Privileges CLI "Promote"
 # Make sure we have root privileges (for bputil).
 sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
 
@@ -139,7 +140,7 @@ sudo bputil -f -u $CURRENT_USER -p $USER_PASS
     echo "Displaying \"success\" message..."
     eval "$dialogSuccess"
 
-# SAP Privileges CLI
+# SAP Privileges CLI "Demote"
 sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove
 
 exit 0
