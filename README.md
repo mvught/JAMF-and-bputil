@@ -1,6 +1,6 @@
 # "BPUTIL" with JAMF
 
-![GitHub release (latest by date)](https://img.shields.io/badge/release-v1.0-blue)
+![GitHub release (latest by date)](https://img.shields.io/badge/release-v1.1-blue)
 ![Github](https://img.shields.io/badge/macOS-11%2B-green)
 
 This tool provides a nice user interface to set the Security back to High. It uses the great SwiftDialog tool: https://github.com/bartreardon/swiftDialog
