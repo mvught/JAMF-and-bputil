@@ -101,9 +101,16 @@ dialogSuccess="$dialogApp \
 # Get the logged in user's name
 CURRENT_USER=$(/bin/echo "show State:/Users/ConsoleUser" | /usr/sbin/scutil | /usr/bin/awk '/Name :/&&!/loginwindow/{print $3}')
 
-# SAP Privileges CLI "Promote"
+
+# Use SAP Privileges CLI to "Promote" the user to admin or use dseditgroup if Privileges is not installed
 # Make sure we have root privileges (for bputil).
-sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
+
+if [ -f "/Applications/Privileges.app/Contents/Resources/PrivilegesCLI" ]; then
+    sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
+else
+    /usr/sbin/dseditgroup -o edit -a "$CURRENT_USER" -t user "admin"
+fi
+
 
 # Exits if root is the currently logged-in user, or no logged-in user is detected.
 function check_logged_in_user {
@@ -126,6 +133,11 @@ until /usr/bin/dscl /Search -authonly "$CURRENT_USER" "${USER_PASS}" &>/dev/null
     if (( TRY >= 5 )); then
         echo "[ERROR] Password prompt unsuccessful after 5 attempts. Displaying \"forgot password\" message..."
         eval "$dialogError"
+        if [ -f "/Applications/Privileges.app/Contents/Resources/PrivilegesCLI" ]; then
+            sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove
+        else
+            /usr/sbin/dseditgroup -o edit -d "$CURRENT_USER" -t user "admin"
+        fi
         exit 1
     fi
 done
@@ -135,7 +147,10 @@ sudo bputil -f -u $CURRENT_USER -p $USER_PASS
     echo "Displaying \"success\" message..."
     eval "$dialogSuccess"
 
-# SAP Privileges CLI "Demote"
-sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove
-
+# Use SAP Privileges CLI to "Demote" the user to admin or use dseditgroup if Privileges is not installed
+if [ -f "/Applications/Privileges.app/Contents/Resources/PrivilegesCLI" ]; then
+  sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
+else
+  /usr/sbin/dseditgroup -o edit -d "$CURRENT_USER" -t user "admin"
+fi
 exit 0
