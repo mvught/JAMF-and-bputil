@@ -21,7 +21,7 @@ This tool provides a nice user interface to set the Security back to High. It us
 ### How did this problem occur "Approved Kernel Extensions (KEXT) payload"
 
 
-Apple Platform Deployment: [**Link**](https://support.apple.com/en-gb/guide/security/sec8e454101b/web)
+Apple Platform Deployment: [**Link Apple**](https://support.apple.com/en-gb/guide/security/sec8e454101b/web)
 
 _"Rebuilding the AuxKC requires the user’s approval and restarting of the macOS to load the changes into the kernel, and it requires that the secure boot be configured to Reduced Security."
 Important: Kexts are no longer recommended for macOS. Kexts risk the integrity and reliability of the operating system and Apple recommends users select solutions that don’t require extending the kernel._
@@ -77,7 +77,7 @@ Make a name: "Secure Boot Level" and scope it to your target "smart-group"
 
 <img src="/Screenshots/FirmwarePasswordUtilityIconX.png" width="50">
 
-[**Download**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
+[**Download Icon**](https://github.com/mvught/JAMF-and-bputil/blob/main/Screenshots/FirmwarePasswordUtilityIconX.png)
 
 ### Script
 Remember well that the user must be an "admin" and "volumeowner" to set security to Full. Otherwise, it won't work and the policy fails.
