@@ -15,25 +15,21 @@
 #     at your own risk!
 #     Author:  Thijs v Vught
 #     Created:  2022-12-30
-#     Last Modified:  2023-01-02
-#     Version:  1.0
+#     Last Modified:  2023-01-03
+#     Version:  1.1
 #   
 #
 ###
-
-scriptVersion="1.0"
-infotext="More Information"
-infolink="https://support.apple.com/en-gb/HT208198"
-ithelplink="https://helpdesk.topdesk.net"
-button2text="Contact the Helpdesk"
 
 ################################## VARIABLES ##################################
 
 # The body of the message that will be displayed before prompting the user for
 # their password. All message strings below can be multiple lines.
-message="## Secure Boot Level\n\nYour Startup Security is set to Medium, to make sure your Mac always starts up from your designated startup disk and from a legitimate, trusted operating system we need to bring this back to Full Security.\n\n Please enter your password to set the Secure Boot Level to High."
-forgotMessage="## Secure Boot Level\n\nYour Startup Security is set to Medium, to make sure your Mac always starts up from your designated startup disk and from a legitimate, trusted operating system we need to bring this back to Full Security.\n\n Please enter your password to set the Secure Boot Level to High. \n\n ### Password Incorrect please try again:"
+message="## Secure Boot Level\n\nYour Startup Security is set to Medium, to make sure your Mac always starts up from the designated startup disk and from a legitimate, trusted operating system we need to bring this back to Full Security.\n\n Please enter your Mac password to set the Secure Boot Level to High."
+forgotMessage="## Secure Boot Level\n\nYour Startup Security is set to Medium, to make sure your Mac always starts up from your designated startup disk and from a legitimate, trusted operating system we need to bring this back to Full Security.\n\n ### Password Incorrect please try again:"
 banner="https://www.agconnect.nl/sites/ag/files/2020-12/hack_shutterstock_1218735091.png?raw=true"
+infotext="More Information"
+infolink="https://support.apple.com/en-gb/HT208198"
 
 # The body of the message that will be displayed if a failure occurs.
 FAIL_MESSAGE="## Check password or be sure you are an Admin and try again.\n\nPlease contact support: mailadres@mail.nl."
@@ -50,8 +46,6 @@ dialogCMD="$dialogApp \
 --bannerimage \"$banner\" \
 --message \"$message\" \
 --button1text \"Submit\" \
---button2text \"${button2text}\" \
---button2action "${ithelplink}" \
 --icon "${icon}" \
 --infobuttontext \"${infotext}\" \
 --infobuttonaction "${infolink}" \
@@ -68,7 +62,8 @@ dialogForgotCMD="$dialogApp \
 --message \"$forgotMessage\" \
 --button1text \"Submit\" \
 --icon "${icon}" \
---infotext \"$scriptVersion\" \
+--infobuttontext \"${infotext}\" \
+--infobuttonaction "${infolink}" \
 --messagefont 'size=14' \
 --position 'centre' \
 --ontop \
