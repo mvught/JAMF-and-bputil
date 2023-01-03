@@ -149,7 +149,7 @@ sudo bputil -f -u $CURRENT_USER -p $USER_PASS
 
 # Use SAP Privileges CLI to "Demote" the user to admin or use dseditgroup if Privileges is not installed
 if [ -f "/Applications/Privileges.app/Contents/Resources/PrivilegesCLI" ]; then
-  sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
+  sudo -u $CURRENT_USER /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --remove
 else
   /usr/sbin/dseditgroup -o edit -d "$CURRENT_USER" -t user "admin"
 fi
