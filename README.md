@@ -1,4 +1,4 @@
-# "BPUTIL" and JAMF
+# "BPUTIL" with JAMF
 
 ![GitHub release (latest by date)](https://img.shields.io/badge/release-v1.0-blue)
 ![Github](https://img.shields.io/badge/macOS-11%2B-green)
